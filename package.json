@@ -1,1 +1,1 @@
-{"name":"atrial-alert-review","version":"0.1.0","private":true,"type":"module","scripts":{"check":"tsc --noEmit","test":"npm run check"},"devDependencies":{"typescript":"5.9.2"}}
+{"name":"atrial-alert-review","version":"0.1.0","private":true,"type":"module","scripts":{"check":"tsc --noEmit","build":"tsc","start":"node dist/server.js","replay":"node dist/replay.js","test":"npm run check && npm run build && node --test dist/*.test.js"},"devDependencies":{"@types/node":"^22.20.3","typescript":"5.9.2"}}
